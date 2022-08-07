@@ -62,7 +62,7 @@ int	check_errors_e_u(char *arg)
 	char	*type;
 
 	type = NULL;
-	if (arg[0] == '\0')
+	if (arg[0] == '\0' || arg[0] == '=')
 		return (1);
 	if (check_for_equal(arg) == 1)
 	{
